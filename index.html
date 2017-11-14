@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+	<title>Bootstrap popover</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	 
+	 <style type="text/css">
+	 	 
+	 	/* style for html buttons */
+	 	input[type=button]
+	 	{
+	 		margin-top: 100px;
+	 	 	margin-left: 10px;
+	 	}
+	 	/* style for span */
+	 	span
+	 	{
+	 		display: block;
+	 		margin-left: 150px; 
+	 		margin-top: 100px;
+	 		font-size: 20px;
+	 	}
+
+	 </style>
+	 
+	<!-- Use bootstrap minified css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	 
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="ButtonPopover.js"></script>
+</head>
+<body>
+<div class="container"> 
+
+	<!-- primary button with data placement position as left and content will be lost once the focus
+	     is moved or other button is clicked -->
+	<input style="margin-left: 150px;" type="button" class="btn btn-primary btn-md" data-toggle="popover" title="Primary Header"  data-content="Primary popover with left position" data-placement="left" 
+	data-trigger="focus" value="Primary">	 
+
+	<!-- success button with data placement position as bottom and content will be displayed on hover -->
+	<input  type="button" class="btn btn-success btn-md" data-toggle="popover" title="Success Header"  data-content="Success popover with bottom position" data-placement="bottom" data-trigger="hover" value="Success">
+
+	<!-- Info button with data placement position as top -->
+	<input  type="button" class="btn btn-info btn-md" data-toggle="popover" title="Info Header"  data-content="Info popover with top position" data-placement="top" value="Information">
+
+	<!-- Warning button with data placement position as right -->
+	<input type="button" class="btn btn-warning btn-md" data-toggle="popover" title="Warning Header"  data-content="Warning popover with right position" data-placement="right" value="Warning">
+
+	<span><strong>Note:</strong> Click on the buttons to display the popover.</span> 
+ 
+</div>
+</body>
+</html>
